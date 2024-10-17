@@ -1,14 +1,48 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline'">
-    <title>Electron</title>
-  </head>
-  <body>
-    <h1>Hello World!</h1>
+<html lang="en">
 
-    <!-- You can also require other files to run in this process -->
-    <script src="./renderer.js"></script>
-  </body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Virtuell Tavla</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+
+    <body>
+
+        <nav>
+            <h1>Virtuell Tavla</h1>
+            <div class="logout-container">
+                <input id="btn-logout" class="btn" type="button" value="Logga ut">
+            </div>
+        </nav>
+
+        <div class="login-container">
+            <div class="input-container">
+                <input id="username" class="input-field" type="text" placeholder="Användarnamn"><br>
+                <input id="password" class="input-field" type="password" placeholder="Lösenord"><br>
+                <div class="btn-container">
+                    <input id="btn-login" class="btn" type="button" value="Logga in">
+                    <input id="btn-create-user" class="btn" type="button" value="Eller skapa användare">
+                </div>
+                <p class="login-message"></p>
+            </div>
+        </div>
+
+        <div class="board-container">
+            <select id="board-dropdown">
+                <option value="" disabled selected>Välj en tavla</option>
+            </select>
+            <input id="btn-create-note" class="btn" type="button" value="Skapa Note">
+        </div>
+
+        <div class="notes-center">
+            <div class="notes-container"></div>
+        </div>
+
+        <script type="module" src="./js/app.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
+        <script src="./js/draggable.js"></script>
+    </body>
+
 </html>

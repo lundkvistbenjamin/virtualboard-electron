@@ -1,0 +1,191 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Sketch&family=Sixtyfour+Convergence&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    margin: 0;
+    padding: 16px;
+    background-color: #D8F3DC;
+    display: flex;
+    justify-content: space-between;
+    border-bottom: solid #A5D6A7;
+}
+
+h1 {
+    font-family: "Londrina Sketch", sans-serif;
+    color: #081C15;
+    padding: 0;
+    margin: 0;
+    font-size: 46px;
+}
+
+.login-container {
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.logout-container {
+    display: none;
+}
+
+.login-message {
+    text-align: center;
+}
+
+.input-container {
+    width: 450px;
+    display: flex;
+    flex-direction: column;
+}
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+}
+
+.btn {
+    background-color: #40916c;
+    border: none;
+    color: white;
+    padding: 12px 22px;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 8px;
+    transition: background-color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.btn:hover {
+    background-color: #74C69D;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+#btn-logout {
+    background-color: #bc4749;
+}
+
+#btn-logout:hover {
+    background-color: #c7686a;
+}
+
+.input-field {
+    padding: 12px 15px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    transition: border-color 0.3s, box-shadow 0.3s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.input-field:focus {
+    border-color: #4CAF50;
+    box-shadow: 0 0 8px rgba(76, 175, 80, 0.2);
+    outline: none;
+}
+
+.board-container {
+    margin-top: 50px;
+    display: none;
+    justify-content: center;
+}
+
+#board-dropdown {
+    margin-right: 30px;
+    padding: 10px 15px;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    background-color: white;
+    font-size: 16px;
+    color: #333;
+    outline: none;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+#board-dropdown:focus {
+    border-color: #0056b3;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+}
+
+.notes-center {
+    display: none;
+    justify-content: center;
+    border: 2px solid rgba(76, 175, 80, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    margin: 50px auto;
+    height: 600px;
+    max-width: 1200px;
+}
+
+.notes-container {
+    position: relative;
+    height: 600px;
+    width: 100%;
+}
+
+.note {
+    position: absolute;
+    padding: 5px 10px 10px 10px;
+    border: 2px solid rgba(76, 175, 80, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    height: 300px;
+    width: 200px;
+    transition: transform 0.2s ease;
+}
+
+.note-btn-container {
+    margin-bottom: 4px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.note-btn-container button:first-child {
+    margin-right: 10px;
+}
+
+.note-btn {
+    width: 12px;
+    height: 12px;
+    border: none;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.orange-note-btn {
+    background-color: #FFA500;
+}
+
+.green-note-btn {
+    background-color: #008000;
+}
+
+.delete-note-btn {
+    background-color: #FF0000;
+}
+
+.note-input {
+    width: 100%;
+    height: 90%;
+    box-sizing: border-box;
+    resize: none;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    overflow-y: auto;
+}
+
+.green {
+    background-color: #D8F3DC;
+}
+
+.orange {
+    background-color: #FFE4B5;
+}
