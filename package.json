@@ -22,6 +22,6 @@
     "nodemon": "^3.1.7"
   },
   "dependencies": {
-    "dotenv": "^16.4.5"
+    "dotenv": "^16.4.7"
   }
 }
