@@ -11,7 +11,7 @@ Clone the repository and follow the installation instructions for the respective
 
 ### Electron App:
 ```bash
-git clone https://github.com/lundkvistbenjamin/virtualboard-2.0-electron.git
+git clone https://github.com/lundkvistbenjamin/virtualboard-electron.git
 cd virtualboard-2.0-electron
 npm install
 npm start
