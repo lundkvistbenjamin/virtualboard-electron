@@ -15,3 +15,7 @@ git clone https://github.com/lundkvistbenjamin/virtualboard-electron.git
 cd virtualboard-2.0-electron
 npm install
 npm start
+```
+
+## **License**  
+MIT License  
